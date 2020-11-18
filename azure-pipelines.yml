@@ -1,0 +1,23 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Visual Studio Enterprise Subscription – MPN (2de7e1cb-872f-43ea-b7af-bc663a656083)'
+    subscriptionId: '2de7e1cb-872f-43ea-b7af-bc663a656083'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'WVD'
+    location: 'West Europe'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'activedirectory/azuredeploy.json'
+    deploymentMode: 'Validation'
