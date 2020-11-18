@@ -3,16 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
-      "value": "GEN-UNIQUE"
+      "value": "raj"
     },
     "adminPassword": {
-      "value": "GEN-PASSWORD"
+      "value": "Password12345"
     },
     "domainName": {
-      "value": "corp.mydomain.com"
+      "value": "rajwvd.com"
     },
     "dnsPrefix": {
-      "value": "GEN-UNIQUE"
+      "value": "rajwvd"
     }
   }
 }
