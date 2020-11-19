@@ -21,4 +21,4 @@ steps:
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/onlyforlab/activedirectory/main/azuredeploy.json'
     csmParametersFileLink: 'https://raw.githubusercontent.com/onlyforlab/activedirectory/main/azuredeploy.parameters.json'
-    deploymentMode: 'Validation'
+    deploymentMode: 'Incremental'
